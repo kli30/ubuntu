@@ -23,7 +23,7 @@ echo "set nocompatible" >> ~/.vimrc
 2. Convert the font in a format GRUB understands:
 3. sudo grub2-mkfont -s 14 -o /boot/grub2/DejaVuSansMono.pf2 /usr/share/fonts/dejavu/DejaVuSansMono.ttf
 4. Edit the /etc/default/grub file adding a line:
-5. GRUB_FONT=/boot/grub2/DejaVuSansMono.pf2
+  ```GRUB_FONT=/boot/grub2/DejaVuSansMono.pf2```
 Update GRUB configuration with:
 BIOS: sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 EFI: sudo grub2-mkconfig -o /boot/efi/EFI/{distro}/grub.cfg # distro on RHEL8 is {'redhat'}
