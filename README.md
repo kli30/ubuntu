@@ -10,3 +10,9 @@ chsh -s $(which zsh)
 ```
 
 reference:  https://www.tecmint.com/install-oh-my-zsh-in-ubuntu/
+
+
+## vi keyboard issue  
+```
+set nocompatible
+```
