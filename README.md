@@ -31,4 +31,4 @@ reboot.
 ## dual boot, time setting
 1. on ubuntu, set rtc in local time zone:  ```timedatectl set-local-rtc 1 --adjust-system-clock```
 2. on windows, ```Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_QWORD /d 1```
-reference: [why][https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/] 
+reference: [why this happens](https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/) 
