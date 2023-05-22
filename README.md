@@ -21,10 +21,9 @@ echo "set nocompatible" >> ~/.vimrc
 ## boot menu font size
 1. Choose a font, in this example I chose DejaVuSansMono.ttf
 2. Convert the font in a format GRUB understands:
-3. ```sudo grub2-mkfont -s 34 -o /boot/grub2/DejaVuSansMono.pf2 /usr/share/fonts/dejavu/DejaVuSansMono.ttf```
+3. ```sudo grub-mkfont -s 34 -o /boot/grub/DejaVuSansMono.pf2 /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf```
 4. Edit the /etc/default/grub file adding a line:
-  ```GRUB_FONT=/boot/grub2/DejaVuSansMono.pf2```
+  ```GRUB_FONT=/boot/grub/DejaVuSansMono.pf2```
 Update GRUB configuration with:
-BIOS: sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-EFI: sudo grub2-mkconfig -o /boot/efi/EFI/{distro}/grub.cfg # distro on RHEL8 is {'redhat'}
+BIOS: sudo grub-mkconfig -o /boot/grub/grub.cfg
 reboot. 
