@@ -55,3 +55,6 @@ conda env create -f environment.yml, or
 conda env create -f environment.yml -p /home/XXX/anaconda3/envs/env_name
 ```
 
+## sublime via snap
+```snap install sublime-text --classic```
+
