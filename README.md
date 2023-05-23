@@ -59,4 +59,10 @@ conda env create -f environment.yml -p /home/XXX/anaconda3/envs/env_name
 ```
 snap install sublime-text --classic
 ```
-
+## mount ntfs 
+```
+sudo apt update
+sudo apt install ntfs-3g
+sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
+note:  disable fast-restart and hibernation on windows at power options
+```
