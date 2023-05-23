@@ -48,7 +48,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 
 ```
-### export env
+export env
 ```
 conda env export | grep -v "^prefix: " > environment.yml
 conda env create -f environment.yml, or
