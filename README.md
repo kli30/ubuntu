@@ -64,5 +64,5 @@ snap install sublime-text --classic
 sudo apt update
 sudo apt install ntfs-3g
 sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
-note:  disable fast-restart and hibernation on windows at power options
+#note:  disable fast-restart and hibernation on windows at power options
 ```
