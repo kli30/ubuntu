@@ -64,5 +64,9 @@ snap install sublime-text --classic
 sudo apt update
 sudo apt install ntfs-3g
 sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
-#note:  disable fast-startup and hibernation on windows at power options
+#note 1: disable fast-startup and hibernation on windows at power options
+#note 2: set options in fstab /src/ /des/, ntfs-3g, uid=kli, gid=kli, 0 0 
 ```
+
+## install cuda and cudnn8
+https://davidblog.si/2022/12/24/setting-up-cuda-and-cudnn-in-ubuntu-22-04/
