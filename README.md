@@ -68,5 +68,6 @@ sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
 #note 2: set options in fstab /src/ /des/, ntfs-3g, uid=kli, gid=kli, 0 0 
 ```
 
-## install cuda and cudnn8
+## install cuda and cudnn8, and tensorrt
 https://davidblog.si/2022/12/24/setting-up-cuda-and-cudnn-in-ubuntu-22-04/
+https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing
