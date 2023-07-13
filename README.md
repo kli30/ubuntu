@@ -71,3 +71,6 @@ sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
 ## install cuda and cudnn8, and tensorrt
 https://davidblog.si/2022/12/24/setting-up-cuda-and-cudnn-in-ubuntu-22-04/
 https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing
+
+## bluetooth issues <br>
+https://askubuntu.com/questions/676853/bluetooth-headset-with-poor-sound-quality-on-ubuntu
