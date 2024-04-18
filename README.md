@@ -40,6 +40,17 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt install code -y
 ```
+settings. 
+1. User setting. Ctrl+Shift+P for user setting (json)
+2. add:
+```     "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    "cmake.configureOnOpen": true,
+    "cmake.cmakePath": "/home/comkadia/cmake-3.27.4-linux-x86_64/bin/cmake"
+```
+
+
 
 ## miniconda
 ```
