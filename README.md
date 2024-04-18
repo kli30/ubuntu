@@ -43,14 +43,28 @@ sudo apt install code -y
 settings. 
 1. User setting. Ctrl+Shift+P for user setting (json)
 2. add:
-```     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
+``` "cmake.configureSettings": {
+       "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     "cmake.configureOnOpen": true,
     "cmake.cmakePath": "/home/comkadia/cmake-3.27.4-linux-x86_64/bin/cmake"
 ```
-
-
+3. add vcpkg.json file in the project root. e.g.,
+```
+{
+  "dependencies": [
+    {
+      "name": "spdlog",
+      "version>=": "1.12.0"
+    },
+    {
+      "name": "vtk",
+      "version>=": "9.2.0-pv5.11.0#10"
+    }
+  ],
+  "builtin-baseline": "9fd83fa98b5f2ae6188a6ba59a49837061db0a3a"
+}
+```
 
 ## miniconda
 ```
