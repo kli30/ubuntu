@@ -79,6 +79,15 @@ conda env export  --no-builds | grep -v "prefix" > environment.yml
 conda env create -f environment.yml, or
 conda env create -f environment.yml -p /home/XXX/anaconda3/envs/env_name
 ```
+if pip dependece error happens, edit the yml file, and run
+```
+conda clean --all 
+conda env update -f environment.yml
+```
+then, activate 
+```
+conda activate env_name
+```
 
 ## sublime via snap
 ```
