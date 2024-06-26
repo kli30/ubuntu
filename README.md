@@ -108,3 +108,46 @@ https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installin
 
 ## bluetooth issues <br>
 https://askubuntu.com/questions/676853/bluetooth-headset-with-poor-sound-quality-on-ubuntu
+
+## usb wifi
+check the usb model:  lsusb
+```
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 004: ID 046b:ff10 American Megatrends, Inc. Virtual Keyboard and Mouse
+Bus 005 Device 003: ID 046b:ffb0 American Megatrends, Inc. Virtual Ethernet
+Bus 005 Device 002: ID 046b:ff01 American Megatrends, Inc. Virtual Hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 005: ID 8087:0032 Intel Corp. AX210 Bluetooth
+Bus 003 Device 004: ID 26ce:01a2 ASRock LED Controller
+Bus 003 Device 003: ID 05e3:0608 Genesys Logic, Inc. Hub
+Bus 003 Device 002: ID 26ce:0a05 Generic USB Audio
+Bus 003 Device 006: ID 0bda:b812 Realtek Semiconductor Corp. RTL88x2bu [AC1200 Techkey]
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 009 Device 003: ID 046d:c548 Logitech, Inc. USB Receiver
+Bus 009 Device 002: ID 046d:c52b Logitech, Inc. Unifying Receiver
+Bus 009 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 010 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+```
+<br> the wifi model is  RTL88x2bu
+```
+git clone https://github.com/RinCat/RTL88x2BU-Linux-Driver.git
+cd RTL88x2BU-Linux-Driver/
+make
+sudo make install
+sudo modprobe 88x2bu
+```
+
+After each kernel update, you must recompile:
+```
+cd ~/RTL88x2BU-Linux-Driver/
+make clean
+git pull
+make
+sudo make install
+sudo modprobe 88x2bu
+```
