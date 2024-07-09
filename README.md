@@ -92,6 +92,7 @@ conda activate env_name
 ## sublime via snap
 ```
 snap install sublime-text --classic
+```
 
 ## auto start
 create /etc/systemd/system/get_cpu_temperature.service, with below:
