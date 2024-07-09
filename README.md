@@ -92,6 +92,33 @@ conda activate env_name
 ## sublime via snap
 ```
 snap install sublime-text --classic
+
+## auto start
+create /etc/systemd/system/get_cpu_temperature.service, with below:
+
+```
+[Unit]
+Description=Get CPU Temperature
+After=network.target
+
+[Service]
+ExecStart=/home/comkadia/Downloads/cpu_logger.py
+Restart=always
+User=root
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=get_cpu_temperature
+
+[Install]
+WantedBy=multi-user.target
+```
+enable, start, stop, status 
+```
+sudo systemctl disable get_cpu_temperature.service
+sudo systemctl enable get_cpu_temperature.service
+sudo systemctl start get_cpu_temperature.service
+sudo systemctl stop get_cpu_temperature.service
+sudo systemctl status get_cpu_temperature.service
 ```
 ## mount ntfs 
 ```
