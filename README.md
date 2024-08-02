@@ -24,7 +24,11 @@ sudo apt install terminator
 ```
 echo "set nocompatible" >> ~/.vimrc
 ```
+## sublime
 
+```
+sudo snap install sublime-text --classic
+```
 
 ## boot menu font size
 1. Choose a font, in this example I chose DejaVuSansMono.ttf
