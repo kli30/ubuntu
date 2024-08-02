@@ -1,5 +1,6 @@
 # ubuntu & windows
-setups 
+[a good example setups](https://innovativeinnovation.github.io/ubuntu-setup/settings/)
+
 
 ## zsh oh-my-zsh
 
