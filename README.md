@@ -18,7 +18,7 @@ reference:  https://www.tecmint.com/install-oh-my-zsh-in-ubuntu/
 ```
 sudo apt install terminator
 ```
-
+[change open terminal as terminator by change preference of gnome-ternimal](https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal)
 
 ## vi keyboard issue  
 ```
