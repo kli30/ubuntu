@@ -104,7 +104,7 @@ After=network.target
 
 [Service]
 ExecStart=/home/comkadia/Downloads/cpu_logger.py
-Restart=always
+Restart=always  
 User=root
 StandardOutput=syslog
 StandardError=syslog
@@ -113,6 +113,8 @@ SyslogIdentifier=get_cpu_temperature
 [Install]
 WantedBy=multi-user.target
 ```
+change Restart from always to no if you want to run once.
+
 enable, start, stop, status 
 ```
 sudo systemctl disable get_cpu_temperature.service
