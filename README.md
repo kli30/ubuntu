@@ -7,6 +7,7 @@ setups
 sudo apt install zsh
 sudo apt install curl wget git axel 
 chsh -s $(which zsh)
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
 reference:  https://www.tecmint.com/install-oh-my-zsh-in-ubuntu/
