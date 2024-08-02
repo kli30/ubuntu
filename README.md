@@ -12,6 +12,12 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 reference:  https://www.tecmint.com/install-oh-my-zsh-in-ubuntu/
 
+## terminator 
+
+```
+sudo apt install terminator
+```
+
 
 ## vi keyboard issue  
 ```
