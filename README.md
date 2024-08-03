@@ -105,6 +105,10 @@ conda activate env_name
 ```
 snap install sublime-text --classic
 ```
+## sensors 
+```
+sudo apt install lm-sensors psensors
+```
 
 ## auto start
 create /etc/systemd/system/get_cpu_temperature.service, with below:
