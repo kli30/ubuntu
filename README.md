@@ -55,7 +55,7 @@ reference: [why this happens](https://ubuntuhandbook.org/index.php/2016/05/time-
 ## developper 
 ## essentials
 ```
-sudo apt install build-essential
+sudo apt install build-essential ninja-build git 
 ```
 
 ### visual studio code
