@@ -68,7 +68,8 @@ sudo apt install code -y
 settings. 
 1. User setting. Ctrl+Shift+P for user setting (json)
 2. add:
-``` "cmake.configureSettings": {
+```
+    "cmake.configureSettings": {
        "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     "cmake.configureOnOpen": true,
