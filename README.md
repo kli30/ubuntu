@@ -52,7 +52,13 @@ reboot.
 2. on windows, ```Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_QWORD /d 1```
 reference: [why this happens](https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/) 
 
-## visual studio code
+## developper 
+## essentials
+```
+sudo apt install build-essential
+```
+
+### visual studio code
 ```
 sudo apt install software-properties-common
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -85,7 +91,7 @@ settings.
 }
 ```
 
-## miniconda
+### miniconda
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
