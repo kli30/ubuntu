@@ -73,7 +73,7 @@ settings.
        "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     "cmake.configureOnOpen": true,
-    "cmake.cmakePath": "/home/comkadia/cmake-3.27.4-linux-x86_64/bin/cmake"
+    "cmake.cmakePath": "/home/comkadia/cmake-3.27.4-linux-x86_64/bin/cmake"  # this will overwride the system cmake or cmake in the path
 ```
 3. add vcpkg.json file in the project root. e.g.,
 ```
