@@ -115,6 +115,11 @@ then, activate
 conda activate env_name
 ```
 
+### qt for paraview 
+```
+sudo apt install -y qtcreator
+```
+
 ## sublime via snap
 ```
 snap install sublime-text --classic
