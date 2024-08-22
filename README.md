@@ -1,12 +1,18 @@
 # ubuntu & windows
 [a good example setups](https://innovativeinnovation.github.io/ubuntu-setup/settings/)
 
-## vpn
-[protonvpn](https://protonvpn.com/support/official-linux-vpn-ubuntu)
+## clang clangd 
 ```
-wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb
-sudo dpkg -i ./protonvpn-stable-release_1.0.3-3_all.deb && sudo apt update
-sudo apt install proton-vpn-gnome-desktop
+wget https://apt.llvm.org/llvm.sh
+chmod +x llvm.sh
+sudo ./llvm.sh <version number> all # say, <version number> = 18
+```
+
+## multiple versions
+```
+sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-18 100
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-18 100
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-18 100
 ```
 
 ## zsh oh-my-zsh
