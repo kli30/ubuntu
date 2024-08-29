@@ -145,7 +145,7 @@ sudo mkdir -p /usr/local/include/onnxruntime/
 sudo cp -r build/native/include/ /usr/local/include/onnxruntime/
 ```
 
-cmake stuffs: 
+cmake stuffs: <br>
 sudo nano /usr/local/share/cmake/onnxruntime/onnxruntimeVersion.cmake
 
 ```
