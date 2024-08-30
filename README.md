@@ -272,8 +272,14 @@ sudo cp /var/cuda-repo-ubuntu2204-11-8-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt-get update
 sudo apt-get -y install cuda
 ```
+[cudnn](https://davidblog.si/2022/12/24/setting-up-cuda-and-cudnn-in-ubuntu-22-04/)
+```
+wget https://developer.download.nvidia.com/compute/cudnn/9.3.0/local_installers/cudnn-local-repo-ubuntu2204-9.3.0_1.0-1_amd64.deb
+sudo dpkg -i cudnn-local-repo-ubuntu2204-9.3.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-9.3.0/cudnn-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get updatesudo apt-get -y install cudnn
+```
 
-https://davidblog.si/2022/12/24/setting-up-cuda-and-cudnn-in-ubuntu-22-04/
 https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing
 
 ## bluetooth issues <br>
