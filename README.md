@@ -281,6 +281,7 @@ sudo apt-get updatesudo apt-get -y install cudnn
 ```
 
 https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing
+dpkg-query -W tensorrt
 
 ## bluetooth issues <br>
 https://askubuntu.com/questions/676853/bluetooth-headset-with-poor-sound-quality-on-ubuntu
