@@ -1,6 +1,9 @@
 # ubuntu & windows
 [a good example setups](https://innovativeinnovation.github.io/ubuntu-setup/settings/)
 
+## set nvim+lsp 
+https://www.lazyvim.org/
+
 ## clang clangd 
 ```
 wget https://apt.llvm.org/llvm.sh
