@@ -79,10 +79,10 @@ settings.
 2. add:
 ```
     "cmake.configureSettings": {
-       "CMAKE_TOOLCHAIN_FILE": "/home/comkadia/repositories/vcpkg/scripts/buildsystems/vcpkg.cmake"
+       "CMAKE_TOOLCHAIN_FILE": "${vcpkg_dir}/scripts/buildsystems/vcpkg.cmake"
     },
     "cmake.configureOnOpen": true,
-    "cmake.cmakePath": "/home/comkadia/cmake-3.27.4-linux-x86_64/bin/cmake"  # this will overwride the system cmake or cmake in the path
+    "cmake.cmakePath": "${cmake_dir}/bin/cmake"  # this will overwride the system cmake or cmake in the path
 ```
 3. add vcpkg.json file in the project root. e.g.,
 ```
@@ -232,7 +232,7 @@ Description=Get CPU Temperature
 After=network.target
 
 [Service]
-ExecStart=/home/comkadia/Downloads/cpu_logger.py
+ExecStart=/XXX/XXX/cpu_logger.py
 Restart=always  
 User=root
 StandardOutput=syslog
