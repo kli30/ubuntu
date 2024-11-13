@@ -265,7 +265,7 @@ sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
 ```
  sudo apt install nvidia-cuda-toolkit
 ```
-from nvidia
+from nvidia, [install cuda 12.6](https://github.com/dicksondickson/ComfyUI-Clean-Install/blob/main/cuda-12.6-install-for-ubuntu-22.04.sh) 
 ```
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pinsudo
 mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
