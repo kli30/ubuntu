@@ -263,6 +263,9 @@ sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
 
 ## install cuda and cudnn8, and tensorrt
 ```
+python3 -m pip install 'tensorflow[and-cuda]'==2.15.1
+```
+```
  sudo apt install nvidia-cuda-toolkit
 ```
 from nvidia, [install cuda 12.6](https://github.com/dicksondickson/ComfyUI-Clean-Install/blob/main/cuda-12.6-install-for-ubuntu-22.04.sh) 
