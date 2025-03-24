@@ -34,7 +34,12 @@ reference:  https://www.tecmint.com/install-oh-my-zsh-in-ubuntu/
 ```
 sudo apt install terminator
 ```
-[change open terminal as terminator by change preference of gnome-ternimal](https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal)
+[DEPRECATED: change open terminal as terminator by change preference of gnome-ternimal](https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal)
+
+select terminator as default: 
+```
+sudo update-alternatives --config x-terminal-emulator
+```
 
 ```
 pip3 install nautilus-open-any-terminal --break-system-packages  
