@@ -36,6 +36,12 @@ sudo apt install terminator
 ```
 [change open terminal as terminator by change preference of gnome-ternimal](https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal)
 
+'''
+pip3 install nautilus-open-any-terminal --break-system-packages
+glib-compile-schemas ~/.local/share/glib-2.0/schemas/
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal "terminator"
+'''
+
 ## vi keyboard issue  
 ```
 echo "set nocompatible" >> ~/.vimrc
