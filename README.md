@@ -36,11 +36,11 @@ sudo apt install terminator
 ```
 [DEPRECATED: change open terminal as terminator by change preference of gnome-ternimal](https://askubuntu.com/questions/76712/setting-nautilus-open-terminal-to-launch-terminator-rather-than-gnome-terminal)
 
-select terminator as default: 
+select terminator as default, so that CTRL+ALT+T opens terminator
 ```
 sudo update-alternatives --config x-terminal-emulator
 ```
-
+add "open in terminator" in nautilus: 
 ```
 pip3 install nautilus-open-any-terminal --break-system-packages  
 glib-compile-schemas ~/.local/share/glib-2.0/schemas/ 
