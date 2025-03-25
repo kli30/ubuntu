@@ -17,6 +17,15 @@ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-18 100
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-18 100
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-18 100
 ```
+## reset gnome-terminal
+```
+sudo apt remove --purge gnome-terminal -y
+sudo apt install gnome-terminal -y
+```
+if reinstall doesn't work: reset config
+```
+dconf reset -f /org/gnome/terminal/
+```
 
 ## zsh oh-my-zsh
 
