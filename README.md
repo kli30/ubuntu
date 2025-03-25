@@ -42,6 +42,7 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 add "open in terminator" in nautilus: 
 ```
+pip3 install nautilus-open-any-terminal --force-reinstall --break-system-packages
 pip3 install nautilus-open-any-terminal --break-system-packages  
 glib-compile-schemas ~/.local/share/glib-2.0/schemas/ 
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal "terminator" 
