@@ -41,12 +41,14 @@ select terminator as default, so that CTRL+ALT+T opens terminator
 sudo update-alternatives --config x-terminal-emulator
 ```
 add "open in terminator" in nautilus: 
+
 ```
 pip3 install nautilus-open-any-terminal --force-reinstall --break-system-packages
 pip3 install nautilus-open-any-terminal --break-system-packages  
 glib-compile-schemas ~/.local/share/glib-2.0/schemas/ 
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal "terminator" 
 ```
+if nothing in schemas, download from the web:  https://github.com/Stunkymonkey/nautilus-open-any-terminal/tree/master/nautilus_open_any_terminal/schemas
 
 ## vi keyboard issue  
 ```
