@@ -284,6 +284,10 @@ sudo mount -t ntfs-3g /dev/nvme1n1p2 /mnt/data
 #note 2: set options in fstab /src/ /des/, ntfs-3g, uid=kli, gid=kli, 0 0 
 ```
 
+## compatibility of cuda, cudnn, and tensorflow
+
+https://www.tensorflow.org/install/source#tested_build_configurations
+
 ## install cuda and cudnn8, and tensorrt
 ```
 python3 -m pip install 'tensorflow[and-cuda]'==2.15.1
