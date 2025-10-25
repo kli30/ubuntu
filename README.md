@@ -123,6 +123,17 @@ settings.
   "builtin-baseline": "9fd83fa98b5f2ae6188a6ba59a49837061db0a3a"
 }
 ```
+4. interactive window: package not found
+in setting.json file: add below
+```
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}"
+    ]
+```
 
 ### miniconda
 ```
