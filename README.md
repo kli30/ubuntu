@@ -134,6 +134,15 @@ in setting.json file: add below
         "${workspaceFolder}"
     ]
 ```
+5. ipykernel issue of unrecoganized parameter:
+ipykernel_launcher.py: error: unrecognized arguments: --f=/run/user/1000/jupyter/runtime/kernel-v3fcd66569fcb4d14b383c1142776ac8dd97c28abc.json
+
+```
+# Make argparse ignore Jupyter kernel args
+import sys
+if 'ipykernel_launcher.py' in sys.argv[0]:
+    sys.argv = [sys.argv[0]] + sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else [sys.argv[0]]
+```
 
 ### miniconda
 ```
